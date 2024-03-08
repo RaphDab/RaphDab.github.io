@@ -1,13 +1,14 @@
 body, html {
     height: 100%;
     margin: 0;
-    background-color: red; /* Définit la couleur de fond de toute la page */
+    background-color: #D92024; /* Couleur de fond changée à #D92024 */
+    overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
 .content {
     color: white;
     font-family: 'Archivo Black', sans-serif; /* Utilise la police Archivo Black */
-    height: 100%;
+    min-height: 100%; /* Assurez-vous que le contenu remplisse au moins tout l'écran vertical */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,10 +17,24 @@ body, html {
 }
 
 h1 {
-    font-size: 5em; /* Ajustez la taille si nécessaire */
+    font-size: 5em; /* Taille du titre */
 }
 
 p {
-    font-size: 2em; /* Ajustez la taille si nécessaire */
-    margin-top: -20px; /* Ajuste l'espacement au-dessus de 'Coming Soon' */
+    font-size: 2em; /* Taille du paragraphe */
+    margin-top: -20px; /* Ajustement de l'espace au-dessus du texte 'Coming Soon' */
+}
+
+#logo {
+    width: auto; /* Largeur automatique pour maintenir le ratio */
+    max-width: 80%; /* Largeur maximale du logo */
+    max-height: 150px; /* Hauteur maximale du logo */
+    margin-bottom: 1em; /* Espace après le logo */
+}
+
+#promo-video {
+    width: 320px; /* Largeur fixe pour simuler un écran de téléphone */
+    height: 568px; /* Hauteur fixe pour simuler un écran de téléphone */
+    border: none; /* Enlevez ou ajoutez une bordure selon vos besoins */
+    margin-top: 1em; /* Espace avant la vidéo */
 }
